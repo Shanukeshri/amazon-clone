@@ -1,0 +1,121 @@
+body{
+    font-family:roboto;
+    margin:0px;
+    padding: 0px;
+    min-width: 598px;
+}
+.grid{
+    display:grid;
+    
+}
+.product{
+    padding:40px 25px 25px 25px;
+    border: 0.1px solid lightgray;
+
+}
+.img-div{
+    display:flex;
+    height:180px;
+    width:100%;
+    justify-content: center;
+}
+.prodimg{
+    height: auto;
+    max-width: 100%;
+}
+
+.about{
+    width : 100%;
+}
+
+.ratingstr{
+    margin : 0;
+    width :100px;
+    height : 20px;
+}
+.rating{
+    margin : 0;
+
+    font-family:sans-serif;
+    display: inline-block;
+    vertical-align: 21%;
+    padding-left: 2px;
+    color: rgb(53,122,177);
+}
+.price{
+
+    margin-top:5px;
+    margin-bottom: 9px;
+    font-weight: bold;
+}
+.selector{
+    margin:0px;
+    border: 1px solid rgb(229, 228, 228);
+    width:50px;
+    height:23px;
+    box-shadow: 0px 0px 19px rgb(255, 0, 0);
+    margin-bottom:15px;
+    cursor:pointer;
+    display: inline-block;
+}
+.attri{
+    font-family: arial;
+    font-weight:bold;
+    font-size:12px;
+    color:rgb(33,33,33);
+    margin-bottom: 3px;
+    margin-top: 0px;
+
+}
+.choice-div{
+    margin-bottom:15px
+}
+.choice{
+    color:rgb(33,33,33);
+    background-color: white;
+    padding:5px 8px 5px 8px;
+    border : 1px solid rgb(187, 187, 187);
+    border-radius:8px;
+    cursor:pointer;
+    
+}
+.message{
+    height:20px;
+}
+.add_to_cart{
+    display:block;
+    width :100%;
+    cursor: pointer;
+    background-color: rgb(249,217,76);
+    border:none;
+    border-radius: 17px;
+    height: 31px;
+}
+
+@media(min-width : 1300px){
+    .grid{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+@media(max-width : 1299px) and (min-width : 1000px){
+    .grid{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+@media(max-width : 999px) and (min-width : 800px){
+    .grid{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+@media(max-width : 799px) and (min-width : 600px){
+    .grid{
+        grid-template-columns: repeat(3,1fr);
+    }
+}
+@media(max-width :599px){
+    .grid{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
